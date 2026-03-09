@@ -15,13 +15,34 @@ A full-featured desktop soundboard application built with Electron, React, and H
 - 📤 **Export/Import** — Share boards as .soundboard JSON files
 - 🖱️ **Drag & Drop** — Drop audio files directly onto pads
 
-## Installation
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) v18 or later (includes npm)
+
+### Installation & Running
 
 ```bash
+# 1. Clone the repository
+git clone https://github.com/kyanite-web/soundboard.git
+cd soundboard
+
+# 2. Install dependencies
 npm install
-npm run dev       # Development mode
-npm run build     # Production build
+
+# 3. Start in development mode (opens the Electron app with hot-reload)
+npm run dev
 ```
+
+### Build a distributable
+
+```bash
+# Produces platform-specific installers in the dist-electron/ folder
+npm run build
+```
+
+Supported targets: **Windows** (NSIS installer + portable exe), **macOS** (DMG + zip), **Linux** (AppImage + .deb).
 
 ## Keyboard Shortcuts
 
